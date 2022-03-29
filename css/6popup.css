@@ -1,0 +1,160 @@
+/*POPUP*/
+
+.popup-hidden {
+  visibility: hidden;
+}
+
+.popup {
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	padding-top: 52px;
+	padding-bottom: 28px;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	z-index: 3;
+} 
+
+.container-popup {
+	max-width: 19.5em;
+	height: 29.4em;
+	flex: auto;
+	margin: auto;
+	font-size: 20px;
+	background-color: #ffffff;
+	position: relative; 
+}
+
+.popup-close {
+	width: 1.2em;
+	height: 1.2em;
+	font-size: 20px;
+	position: absolute;
+	top: -2em;
+	right: 0;
+} 
+
+.popup-close {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.popup-close:before, .popup-close:after {
+	width: 1.4em;
+	height: 0.2em;
+}
+.popup-close:before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.popup-close:after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+.popup-close:before, .popup-close:after {
+	content: "";
+	background-color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.feedback {
+	padding: 7%;
+}
+
+.title-popup {
+	margin-top: 0; 
+}
+
+.feedback {
+	height: 100%;
+	display: flex;
+	flex-direction: column; 
+}
+
+.form-feedback {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.question, .radio-text {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #0f0d0e;
+    /*font-family: "OpenSans-Regular";*/
+  }
+
+
+.question {
+	display: block;
+	margin-bottom: 7px;
+}
+
+.select {
+	-webkit-appearance: none;
+	-mos-appearance: none;
+	background-image: url("../svg/form-arrows.svg");
+	background-size: 10px;
+	background-repeat: no-repeat;
+	background-position: right 5px center;
+}
+
+
+.radio {
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+}
+
+.radio-text {
+	display: inline-block; 
+}
+.radio-text::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background-image: url("../svg/form-empty-circle.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 24px;
+	margin-right: 5px;
+}
+.radio:checked ~ .radio-text::before {
+	background-image: url("../svg/form-circle.svg");
+}
+.feedback-text {
+	height: 131px;
+	resize: none;
+}
+
+
+@media (max-width: 1199px) and (min-width: 641px) {
+
+	div.container-popup {
+      font-size: 20.2px;
+    }
+}
+
+
+
+
+
+@media (max-width: 640px) {
+
+	div.container-popup {
+      font-size: 18.5px;
+      max-width: 17.9em;
+    }
+}
+
+

@@ -1,0 +1,164 @@
+/*TRENDS*/
+.trd-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.trd-item {
+  position: relative;
+  width: calc(25% - 3px);
+  display: flex;
+  align-items: flex-end;
+  min-height: 320px;
+  /*max-height: 570px;*/
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.trd-item:nth-child(n + 2) {
+  margin-left: 4px;
+}
+
+.trd-item-pic1 {
+  background-image: url("../img/trend1.jpg");
+}
+.trd-item-pic2 {
+  background-image: url("../img/trend2.jpg");
+}
+.trd-item-pic3 {
+  background-image: url("../img/trend3.jpg");
+}
+.trd-item-pic4 {
+  background-image: url("../img/trend4.jpg");
+}
+
+.trd-item-box {
+  width: 100%;
+  display: flex;
+  padding: 15px 22px;
+}
+.trd-item-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.trd-item-textbox {
+  border: 2px solid #b59f5b;
+  width: 100%;
+  z-index: 1;
+  padding: 32px;
+}
+
+.trd-item-lnk {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.trd-item-title {
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.trd-item-title:hover {
+  color: #b59f5b;
+}
+
+
+
+
+
+
+
+
+
+/*при ширине от 0 до 1199*/
+@media (max-width: 1199px) {
+	
+  
+}
+
+
+/*при ширине больше 1200*/
+@media (min-width: 1200px) {
+
+	
+}
+
+
+
+
+
+
+
+
+
+/*Диапазон для планшета*/
+@media (min-width: 641px) and (max-width: 1199px) {
+  
+  .trd-item {
+    width: calc(50% - 3px);
+    margin-bottom: 4px;
+    min-height: 245px;
+  }
+
+  .trd-item:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  .trd-item-box {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .trd-item-title {
+    font-size: 17px;
+  }
+}
+
+
+
+
+
+
+/*для мобилы от 0 до 640*/
+@media (max-width: 640px) {
+
+  .trd-item {
+    width: 100%;
+    margin-bottom: 3px;
+    min-height: 232px;
+    /*padding: 55px 10px 3px;*/
+  }
+  .trd-item:nth-child(n + 2) {
+    margin-left: 0;
+  }
+
+  .trd-item-title {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .trd-item-textbox {
+    padding: 22px;
+  }
+}
+
+
+@media (max-width: 1199px) and (min-width: 641px), (max-width: 640px) and (orientation: landscape) {
+
+  .trd-item {
+     width: calc(50% - 4px);
+  }
+  /*.trd-item:nth-child(2n+2) {
+    margin-left: 4px;
+  }*/
+}
