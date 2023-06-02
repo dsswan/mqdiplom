@@ -8,3 +8,5 @@
 - Microsoft Edge;
 - Opera;
 - Safari.
+
+https://dsswan.github.io/mqdiplom/
